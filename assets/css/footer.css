@@ -1,0 +1,98 @@
+footer {
+    background-color: #202020;
+}
+
+.background-wrapper {
+    max-width: 1302px;
+    margin: auto;
+}
+
+.footer {
+    background-image: url(../images/Group46.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.contacts {
+    padding-top: 70px;
+}
+
+.contacts__headline {
+    display: flex;
+}
+
+.contacts__headline h2 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.contacts__headline h2:last-child {
+    margin-left: 108px;
+}
+
+.contacts__links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.contacts__links a:first-child {
+    max-width: 150px;
+}
+
+.contacts__links a:last-child {
+    max-width: 232px;
+}
+
+.social-medias {
+    margin-top: 22.5px;
+    padding-bottom: 70px;
+}
+
+.social-medias a {
+    max-width: 21px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        background-image: url(../images/Group46.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer {
+        background-image: url(../images/Group46.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: contain;
+    }
+
+    .contacts__headline {
+        justify-content: center;
+    }
+
+    .contacts__headline h2:last-child {
+        display: none;
+    }
+
+    .contacts__links {
+        align-items: center;
+    }
+
+    .social-medias a {
+        display: block;
+        margin: auto;
+    }
+}

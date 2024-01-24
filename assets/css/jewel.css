@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap");
+
+.banner {
+  padding: 160px 15px 50px;
+}
+
+.banner h1 {
+  padding: 50px 0 0;
+}
+
+.jewel-container {
+  margin: auto;
+  max-width: 1230px;
+  background-color: rgba(217, 217, 217, 0.9);
+}
+
+h1.jewel {
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.2;
+  text-align: center;
+  color: #202020;
+}
+
+.jewel__text {
+  padding: 20px 80px;
+}
+
+.jewel__text p {
+  padding-bottom: 10px;
+  color: #202020;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: justify;
+  text-indent: 5%;
+}
+
+.jewel__images {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px 50px;
+}
+
+.jewel__images img {
+  margin-right: 3px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1195px) {
+  .jewel__images :first-child {
+    display: none;
+}
+
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .banner {
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__menu {
+    background-image: url(../images/banner.png);
+    z-index: 10;
+  }
+
+  .banner {
+    padding-top: 100px;
+  }
+
+  h1.jewel {
+    font-size: 30px;
+  }
+
+  .jewel__text {
+    padding: 20px 15px;
+  }
+
+  .jewel__image_1 {
+    display: block;
+    max-width: 100%;
+  }
+
+
+  .jewel__image_2, .jewel__image_3 {
+    display: none;
+}

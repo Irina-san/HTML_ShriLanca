@@ -1,0 +1,274 @@
+.banner {
+  text-align: start;
+  padding-top: 160px;
+  padding-bottom: 50px;
+}
+
+.banner p {
+  padding-bottom: 40px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #373829;
+}
+
+.banner__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.excursions {
+  padding: 20px 60px 30px 50px;
+  background: rgba(217, 217, 217, 0.9);
+  width: 100%;
+}
+
+.excursions h2 {
+  text-align: center;
+}
+
+.excursions__wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.excursions__titles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  column-gap: 30px;
+  align-items: end;
+}
+
+.excursions__title {
+  padding-left: 10px;
+  border-width: 0px 0 1px 0;
+  border-color: #202020;
+  border-style: solid;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  color: #202020;
+  cursor: pointer;
+  opacity: 0.8;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.excursions__title.active {
+  opacity: 1;
+  font-weight: 600;
+  padding-right: 8px;
+}
+
+.excursions__title:hover {
+  opacity: 1;
+  font-weight: 600;
+  padding-right: 8px;
+}
+
+.excursions__article {
+  margin-top: 30px;
+  justify-content: flex-start;
+}
+
+.excursions__article img {
+  max-width: 100%;
+}
+
+.excursions__text {
+  margin-left: 45px;
+  max-width: 60%;
+}
+
+.excursions__article h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 26px;
+  color: #202020;
+  margin-top: 0;
+}
+
+.charge {
+  background-color: #c2ab9d;
+}
+
+.request {
+  display: flex;
+  justify-content: end;
+}
+
+.request-wrapper {
+  max-width: 1201px;
+  margin: auto;
+  background-image: url(../images/charity.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+h4 {
+  margin: 0;
+  padding: 91px 0;
+  max-width: 920px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1220px) {
+  .banner__container {
+    margin: 0 15px;
+  }
+
+  .request {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .excursions__titles {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    column-gap: 20px;
+  }
+
+  .excursions__title {
+    padding: 6px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .banner {
+    padding-top: 200px;
+  }
+  .banner p {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
+  .excursions h2 {
+    margin-bottom: 15px;
+  }
+
+  .excursions__text {
+    margin-left: 30px;
+    max-width: 55%;
+  }
+
+  .charity {
+    display: none;
+  }
+
+  .request {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  h4 {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .request-wrapper {
+    background-position: center bottom;
+  }
+
+  h4 {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 35px;
+    line-height: 1.8;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu {
+    background-image: url(../images/banner.png);
+    z-index: 10;
+  }
+
+  .banner {
+    padding-top: 100px;
+  }
+
+  .banner__container {
+    margin: 0 5px;
+  }
+
+  .excursions {
+    padding: 5px 10px 10px 10px;
+  }
+
+  .excursions h2 {
+    font-size: 30px;
+  }
+
+  .excursions__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .excursions__titles {
+    column-gap: 10px;
+    align-items: end;
+  }
+
+  .excursions__title {
+    padding: 6px;
+    border-width: 0px 0 1px 0;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .excursions__title:last-child {
+    border-width: 0px 0 1px 0;
+  }
+
+  .excursions__article {
+    padding-left: 5px;
+  }
+
+  .excursions__article h3 {
+    font-size: 23px;
+  }
+
+  .banner p {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .excursions__article {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .excursions__text {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .excursions__article {
+    align-items: center;
+  }
+
+  h4 {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 25px;
+    line-height: 1.8;
+    padding-bottom: 300px;
+  }
+
+  .request-wrapper {
+    background-position: center bottom;
+  }
+}
